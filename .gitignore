@@ -9,12 +9,15 @@
 !/zathura/
 !/terminator/
 !/rofi/
-!ranger/rc.conf
 !/kitty/
 !/htop/
 !/alacritty/
 !/neofetch/
 !/starship.toml
+# Include only the rc.conf file within the ranger directory
+!/ranger/
+/ranger/*
+!/ranger/rc.conf
 
 # Include the directory for the program that converts English to Hebrew
 !/us_to_il/
