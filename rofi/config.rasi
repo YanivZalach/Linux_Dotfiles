@@ -1,0 +1,10 @@
+configuration {
+
+modi: "window,drun,ssh,run,filebrowser";
+show-icons: true;
+font: "monospace 15";
+
+}
+
+//@theme "/usr/share/rofi/themes/android_notification.rasi"
+@theme "/usr/share/rofi/themes/android_notification.rasi"

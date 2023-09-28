@@ -1,0 +1,21 @@
+# Ignore all files by default
+/*
+
+# The repo files
+!.gitignore
+!README.md
+
+# But include these config directories and their contents
+!/zathura/
+!/terminator/
+!/rofi/
+!/ranger/
+!/kitty/
+!/htop/
+!/alacritty/
+!/neofetch/
+!/starship.toml
+
+# Include the directory for the program that converts English to Hebrew
+!/us_to_il/
+

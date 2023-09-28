@@ -1,0 +1,56 @@
+[global_config]
+  suppress_multiple_term_dialog = True
+[keybindings]
+  zoom_in = <Primary>plus
+  go_up = <Alt>k
+  go_down = <Alt>j
+  go_left = <Alt>h
+  go_right = <Alt>l
+  split_auto = <Alt>a
+  split_horiz = <Alt>y
+  split_vert = <Alt>x
+  page_up_half = <Primary>Up
+  page_down_half = <Primary>Down
+  close_window = <Super>c
+  resize_up = <Alt>Up
+  resize_down = <Alt>Down
+  resize_left = <Alt>Left
+  resize_right = <Alt>Right
+  layout_launcher = <Primary><Shift>a
+[profiles]
+  [[default]]
+    background_color = "#282828"
+    background_darkness = 0.87
+    background_type = transparent
+    cursor_fg_color = "#dc8add"
+    cursor_bg_color = "#c061cb"
+    cursor_color_default = False
+    font = FiraMono Nerd Font Mono Medium 13
+    foreground_color = "#ebdbb2"
+    show_titlebar = False
+    scrollbar_position = hidden
+    palette = "#282828:#cc241d:#98971a:#d79921:#458588:#b16286:#689d6a:#a89984:#928374:#fb4934:#b8bb26:#fabd2f:#83a598:#d3869b:#8ec07c:#ebdbb2"
+    use_custom_command = True
+    custom_command = zsh
+    use_system_font = False
+    bold_is_bright = True
+    copy_on_selection = True
+  [[fish_]]
+    background_color = "#300a24"
+    background_darkness = 0.9
+    background_type = transparent
+    foreground_color = "#ffffff"
+    use_custom_command = True
+    custom_command = fish
+    bold_is_bright = True
+    copy_on_selection = True
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+      profile = default
+[plugins]

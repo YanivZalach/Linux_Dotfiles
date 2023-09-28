@@ -1,0 +1,4 @@
+the code get as input us keybord cercturs in the terminal as input and print there he replacment 
+
+add in ~/.cinfig the dir
+than create an allias: python3 ~/.config/us_to_il/init.py
