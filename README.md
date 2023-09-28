@@ -4,39 +4,39 @@ Welcome to my Linux Dotfile Repository! Here, you'll find various configuration 
 
 ## Configuration Directories 📁
 
-- **/zathura/** 📚
+- **zathura** 📚
   - [Description]: Configuration files for Zathura, a highly customizable document viewer (pdf).
   - [Installation]: Copy the contents of the directory and place them in your Zathura configuration folder: ~/.config/zathura/zathurarc
 
-- **/terminator/** 💻
+- **terminator** 💻
   - [Description]: Configuration files for Terminator, a terminal emulator.
   - [Installation]: Copy the contents of the directory and place them in your Terminator configuration folder: ~/.config/terminator/config
 
-- **/rofi/** 🚀
+- **rofi** 🚀
   - [Description]: Configuration files for Rofi, an application launcher and window switcher.
   - [Installation]: Copy the contents of the directory and place them in your Rofi configuration folder: ~/.config/rofi/config.rasi
 
-- **/kitty/** 🐱
+- **kitty** 🐱
   - [Description]: Configuration files for Kitty, a fast, featureful, and GPU-accelerated terminal emulator.
   - [Installation]: Copy the contents of the directory and place them in your Kitty configuration folder: ~/.config/kitty/kitty.conf
 
-- **/htop/** 📊
+- **htop** 📊
   - [Description]: Configuration files for htop, an interactive system monitor.
   - [Installation]: Copy the contents of the directory and place them in your htop configuration folder: ~/.config/htop/htoprc
 
-- **/alacritty/** 🔥
+- **alacritty** 🔥
   - [Description]: Configuration files for Alacritty, a blazing-fast GPU-accelerated terminal emulator.
   - [Installation]: Copy the contents of the directory and place them in your Alacritty configuration folder: ~/.config/alacritty/alacritty.yml
 
-- **/neofetch/** 🚀
+- **neofetch** 🚀
   - [Description]: Configuration files for Neofetch, a command-line system information tool.
   - [Installation]: Copy the contents of the directory and place them in your Neofetch configuration folder: ~/.config/neofetch/config.conf
 
-- **/starship.toml** 🚀
+- **starship.toml** 🚀
   - [Description]: Configuration file for Starship, a fast and customizable prompt for any shell.
   - [Installation]: Copy the file and place it in: ~/.config/starship.toml
 
-- **/ranger/** 📂
+- **ranger** 📂
   - [Description]: Configuration files for Ranger, a console-based file manager.
   - [Installation]: Copy the contents of the directory and place them in your Ranger configuration folder: ~/.config/ranger/rc.conf
 
