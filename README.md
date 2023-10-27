@@ -16,6 +16,10 @@ Welcome to my Linux Dotfile Repository! Here, you'll find various configuration 
   - [Description]: Configuration files for Rofi, an application launcher and window switcher.
   - [Installation]: Copy the contents of the directory and place them in your Rofi configuration folder: ~/.config/rofi/config.rasi
 
+- **sxiv** 🚀
+  - [Description]: Configuration files for Sxiv, an image viewer.
+  - [Installation]: Copy the contents of the directory and place them in your Sxiv configuration folder: ~/.config/sxiv/exec/key-handler
+
 - **kitty** 🐱
   - [Description]: Configuration files for Kitty, a fast, featureful, and GPU-accelerated terminal emulator.
   - [Installation]: Copy the contents of the directory and place them in your Kitty configuration folder: ~/.config/kitty/kitty.conf

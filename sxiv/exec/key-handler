@@ -1,0 +1,52 @@
+#!/bin/sh
+
+# Prefix key (C-x by default) is pressed. Then the commend key.
+# The next key combo is passed as its first argument. Passed via stdin are the
+
+# The key combo argument has the following form: "[C-][M-][S-]KEY",
+# where C/M/S indicate Ctrl/Meta(Alt)/Shift modifier states and KEY is the X
+# keysym as listed in /usr/include/X11/keysymdef.h without the "XK_" prefix.
+
+# Function for rotating the image
+rotate() {
+	degree="$1"
+	tr '\n' '\0' | xargs -0 realpath | sort | uniq | while read file; do
+		case "$(file -b -i "$file")" in
+		image/jpeg*) jpegtran -rotate "$degree" -copy all -outfile "$file" "$file" ;;
+		*)           mogrify  -rotate "$degree" "$file" ;;
+		esac
+	done
+}
+
+# Key bindings
+
+case "$1" in
+	
+	# Seeing the information about the picture
+	"i") while read file; do alacritty --config-file "$HOME/.config/alacritty/alacritty.yml" --title "$file" -e sh -c "exiv2 pr -q -pa '$file' | less" & done ;;
+
+	# Copy the full path of the file
+	"N")
+		echo -n "$(pwd)/$(xclip -in -filter | tr '\n' ' ')" | xclip -in -selection clipboard ;;
+	# Copy the name of the file
+	"n")
+		xclip -in -filter | tr '\n' ' '| xclip -in -selection clipboard ;;
+
+	# Gimp
+	"C-g")
+		tr '\n' '\0' | xargs -0 gimp & ;;
+
+	# Rotating the image
+	"r")
+		rotate  90 ;;
+	"R")
+		rotate 270 ;;
+	"f")
+		rotate 180 ;;
+
+	# Copy the sxiv window
+	"C-w")
+		import -window "$(xdotool getactivewindow)" png:- | xclip -selection clipboard -t image/png; echo "Image copied to clipboard" ;; 
+
+esac
+
