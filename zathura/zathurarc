@@ -7,7 +7,7 @@ map u scroll half-up
 map d scroll half-down
 map r reload
 map R rotate
-map n recolor
+map <C-n> recolor
 map p print
 map P toggle_page_mode
 set selection-clipboard clipboard
