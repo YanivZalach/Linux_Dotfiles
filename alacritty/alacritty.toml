@@ -1,0 +1,85 @@
+[cursor]
+blink_timeout = 5
+
+[colors]
+draw_bold_text_with_bright_colors = false
+
+[colors.bright]
+black = "#444444"
+blue = "#1a8fff"
+cyan = "#14ffff"
+green = "#8ae234"
+magenta = "#b294bb"
+red = "#fc5454"
+white = "#ffffff"
+yellow = "#fce94f"
+
+[colors.cursor]
+cursor = "#f514e6"
+
+[colors.normal]
+black = "#000000"
+blue = "#0d73cc"
+cyan = "#0dcdcd"
+green = "#4e9a06"
+magenta = "#85678f"
+red = "#cc0000"
+white = "#dcdccc"
+yellow = "#c4a000"
+
+[colors.primary]
+background = "#262626"
+foreground = "#c0b18b"
+
+[font]
+size = 13.0
+
+[font.bold]
+family = "FiraMonoNerdFont"
+style = "Bold"
+
+[font.bold_italic]
+family = "FiraMonoNerdFont"
+style = "Bold Italic"
+
+[font.italic]
+family = "FiraMonoNerdFont"
+style = "Italic"
+
+[font.normal]
+family = "FiraMonoNerdFont"
+style = "Bold"
+
+[[keyboard.bindings]]
+action = "ScrollPageUp"
+key = "PageUp"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "ScrollPageDown"
+key = "PageDown"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "ScrollLineUp"
+key = "Up"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "ScrollLineDown"
+key = "Down"
+mods = "Control"
+
+[scrolling]
+history = 1500
+
+[shell]
+args = ["--login"]
+program = "/bin/fish"
+
+[window]
+opacity = 0.9
+
+[window.padding]
+x = 4
+y = 4
